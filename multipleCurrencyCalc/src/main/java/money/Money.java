@@ -22,7 +22,7 @@ class Money implements Expression{
     }
     public boolean equals(Object object) {
         Money money = (Money) object;
-        return this.amount == money.amount && currency().equals(money.currency());
+        return amount == money.amount && currency().equals(money.currency());
     }
     public String toString(){
         return amount + " " + currency;
